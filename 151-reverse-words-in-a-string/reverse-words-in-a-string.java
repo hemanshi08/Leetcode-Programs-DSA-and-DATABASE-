@@ -4,9 +4,7 @@ class Solution {
         StringBuilder sb = new StringBuilder();
         
         for(int i = sp.length-1 ; i>=0;i--){
-           
-                
-
+   
             sb.append(sp[i]).append(" ");
             
         }
