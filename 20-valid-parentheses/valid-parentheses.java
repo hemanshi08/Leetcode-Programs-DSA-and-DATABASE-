@@ -4,15 +4,10 @@ class Solution {
         Stack<Character> st = new Stack<>();
         for (char ch : arr){
             if(!st.isEmpty()){
-                if((ch == ')') && (st.peek()=='(')){
+                if((ch == ')') && (st.peek()=='(') || (ch == '}') && (st.peek()=='{') || (ch == ']') && (st.peek()=='[') ){
                 st.pop();
             }
-            else if((ch == '}') && (st.peek()=='{')){
-                st.pop();
-            }
-            else  if((ch == ']') && (st.peek()=='[')){
-                st.pop();
-            }
+            
             else{
                 st.push(ch);
             }
